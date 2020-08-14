@@ -1,0 +1,140 @@
+body {
+  background-color: #d2ccd8;
+  font-size: 70%;
+  font-family: arial, sans-serif;
+  color: white;
+  padding: 5px;
+  border: 5px;
+  margin:5px;
+}
+
+.header {
+}
+
+.header h1 {
+  font-family: arial;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Carousel Styling */
+.slide1{
+  background-image: url('/assets/books.gif');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('/assets/heartbook.gif');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3 {
+  background-image: url('/assets/butterfliesbook.gif');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 8em;
+  font-family: pacifico, cursive;
+  padding-bottom: .4em;
+}
+
+.carousel-caption p{
+  font-size: 2.5em;
+}
+
+#message {
+  font-size: 1.8em;
+}
+
+.row p{
+  font-size: 2em;
+}
+
+.description p{
+  font-size: 2em;
+}
+
+
+/*.navbar-header ul{
+  font-family: 'Calibri';
+  font-size: 2.5em;
+}*/
+
+.jumbotron {
+  background-color: #8780ad;
+}
+
+
+#d2ccd8
+.jumbotron-1 {
+  color: #8780ad;
+}
+
+.jumbotron3 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.formBox {
+  font-size: 1.5em;
+  color: #999999;
+}
+
+.greyText {
+  font-size: 1em;
+  color: #999999;
+}
+
+.mainContent {
+  background-color: #f6f3ec;
+}
+
+.uitext {
+  align-items: right;
+}
+
+.nav {
+  font-size: 2em;
+}
+
+.contact h3{
+  font-size: 4em;
+  color: black;
+}
+
+.col-md-4 {
+  font-size: 2em;
+  color: white;
+}
+
+.message {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+.row p {
+  font-size: 1.3em;
+}
+
+.btn pull-left {
+  color: black;
+}
+
+.footer p {
+  font-family: verdana;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+
+
+
