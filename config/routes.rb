@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'pages/info'
   resources :ideas
+=======
+  resources :ideas
+  resources :comments
+>>>>>>> Render-comments
 	resources :posts do 
 		resources :comments
 	end
