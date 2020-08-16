@@ -13,6 +13,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
+  gem 'carrierwave'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
