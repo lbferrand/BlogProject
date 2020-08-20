@@ -21,59 +21,79 @@
 
 
 </head>
-<body id="Blog" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="The Book Lover Blog" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <div class="container">
   <div class="jumbotron">
     <div class="header">
-    <h1>The Book's Lover Blog</h1>
+    <h1>The Book Lover Blog</h1>
+    <%= link_to "Posts", posts_path %>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <%= link_to "Blog", posts_path %>
-</div>
-
-<div class="container">
-  <nav class="navbar navbar-inverse">
-   
-    <ul class="nav navbar-nav navbar-left">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="https://www.goodreads.com">My Books</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="../Blog1/Browse.html">Browse<span class="caret"></span></a>
-      
-      <ul class="dropdown-menu">
-        <li><a href="../Blog1/Recommendations.html">Recommendations</a></li>
-        <li><a href="../Blog1/Deals">Deals</a></li>
-        <li><a href="../Blog1/Choice Awards">Choice Awards</a></li>
-        <li><a href="../Blog1/Giveaways">Giveaways</a></li>
-        <li><a href="../Blog1/New Release">New Releases</a></li>
-        <li><a href="../Blog1/Lists">Lists</a></li>
-        <li><a href="../Blog1/News & Interviews">News & Interviews</a></li>
-        <li><a href="../Blog1/Explore">Explore</a></li>
-        <li><a href="../Blog1/Goodreads Blog">Goodreads Blog</a></li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Menu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Books</a>
       </li>
 
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community<span class="caret"></span></a>
-      <ul id="menu" class="dropdown-menu">
-        <li><a href="../Blog1/Groups">Groups</a></li>
-        <li><a href="../Blog1/Discussions">Discussions</a></li>
-        <li><a href="../Blog1/Quotes">Quotes</a></li>
-        <li><a href="../Blog1/Ask the Author">Ask the Author</a></li>
-        <li><a href="../Blog1/Trivia">Trivia</a></li>
-        <li><a href="../Blog1/Lists">Lists</a></li>
-        <li><a href="../Blog1/Quizzes">Quizzes</a></li>
-        <li><a href="../Blog1/Creative Writing">Creative Writing</a></li>
-        <li><a href="../Blog1/People">People</a></li>
-        <li><a href="../Blog1/Events">Events</a></li>
-      </ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Browse
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="../Blog/Recommendations.html">Recommendations</a>
+            <a class="dropdown-item" href="../Blog/Choice Awards">Choice Awards</a>
+            <a class="dropdown-item" href="../Blog/Giveaways">Giveaways</a>
+            <a class="dropdown-item" href="../Blog/New Release">New Releases</a>
+            <a class="dropdown-item" href="../Blog/Lists">Lists</a>
+            <a class="dropdown-item" href="../Blog/News & Interviews">News & Interviews</a>
+            <a class="dropdown-item" href="../Blog/Explore">Explore</a>
+            <a class="dropdown-item" href="../Blog/Goodreads Blog">Goodreads Blog</a>
+        </div>
       </li>
-      
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Community
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="../Blog/Groups">Groups</a>
+          <a class="dropdown-item" href="../Blog/Discussions">Discussions</a>
+          <a class="dropdown-item" href="../Blog/Quotes">Quotes</a>
+          <a class="dropdown-item" href="../Blog/Ask the Author">Ask the Author</a>
+          <a class="dropdown-item" href="../Blog/Trivia">Trivia</a>
+          <a class="dropdown-item" href="../Blog/Lists">Lists</a>
+          <a class="dropdown-item" href="../Blog/Quizzes">Quizzes</a>
+          <a class="dropdown-item" href="../Blog/Creative Writing">Creative Writing</a>
+          <a class="dropdown-item" href="../Blog/People">People</a>
+          <a class="dropdown-item" href="../Blog/Events">Events</a>
+        </div>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="/ideas">Ideas</a>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to 'New Idea', new_idea_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item">
+            <a class="nav-link" href="/pages/info">Info</a>
+      </li>
     </ul>
-    
-  </ul>
+  </div>
+</nav>
 
   <form class="navbar-form navbar-left">
     <div class="form-group">
@@ -86,10 +106,11 @@
     <li class="active">
       <a href="../sign_in.html.erb"><span class="glyphicon glyphicon-user"></span> Sign in </a></li>
     <li class="active">
-      <a href="../login.html.erb"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <a href="../login.html.erb"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+    </li>
   </ul>
 
-</nav>
+  </nav>
 </div>
 
 <!-- Carousel -->
@@ -106,31 +127,30 @@
     <div class="carousel-inner">
 
       <div class="item active">
-      <div class="slide1"></div>
-      <div class="carousel-caption">
+        <div class="slide1"></div>
+        <div class="carousel-caption">
       
           <h1>Dream with books</h1>
               <p>Thousands of Titles to chose</p>
               <p><a href="#" class="btn btn-primary btn-sm">Read them Now</a></p>
-      </div>
+        </div>
       </div>
   
       <div class="item">
-      <div class="slide2"></div>
-      <div class="carousel-caption">
+        <div class="slide2"></div>
+        <div class="carousel-caption">
           <h1>All about fiction's novels</h1>
               <p>Many authors of your choice</p>
-      </div>
-      </div>
+        </div>
+        </div>
 
-      <div class="item">
-      <div class="slide3"></div>
-      <div class="carousel-caption">
-        <h1>Amazing Stories</h1>
+        <div class="item">
+        <div class="slide3"></div>
+        <div class="carousel-caption">
+          <h1>Amazing Stories</h1>
             <p>And they are All Free</p>
+        </div>
       </div>
-      </div>
-
     </div>
 
 <!-- Left and right controls -->
